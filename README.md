@@ -19,13 +19,13 @@ If you use Maven for Dependency management, you can include this using below dep
 <dependency>
   <groupId>com.github.jsixface</groupId>
   <artifactId>yamlconfig</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
 </dependency>
 ```
 Or if you use Gradle, you can include this using below dependency.
 
 ``` 
-implementation 'com.github.jsixface:yamlconfig:1.2.0'
+implementation 'com.github.jsixface:yamlconfig:1.3.0'
 ```
 
 ## Usage - internal Yaml
