@@ -36,7 +36,7 @@ InputStream resource = getClass()
                          .getClassLoader()
                          .getResourceAsStream("config.yml");
 
-YamlConfig config = YamlConfig.load(resource);
+YamlConfig config = new YamlConfig(resource);
 ```
 
 Assume the contents of `config.yml` is as below:
@@ -78,7 +78,7 @@ InputStream resource = getClass()
                          .getResourceAsStream("config.yml");
                          
 # pass the lot to YamlConfig
-YamlConfig config = YamlConfig.load(yaml, resource);
+YamlConfig config = new YamlConfig(yaml, resource);
 
 # and now you can use fully qualified dot notation keys:
 config.getString("service.db.someKey");
