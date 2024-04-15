@@ -6,6 +6,23 @@ It looks better to organize config in a YAML file since it makes sense to mainta
 
 **YamlConfig** helps read configuration for a java project from a YAML config file and access them via dotted notation.
 
+## ⚠ 1.3.0 Breaking changes:
+
+
+Version **1.3.0** introduces breaking changes as follows:
+
+```
+YamlConfig config = YamlConfig.load(resource);
+YamlConfig config = YamlConfig.load(yaml, resource);
+```
+
+is now:
+
+```
+YamlConfig config = new YamlConfig(resource);
+YamlConfig config = new YamlConfig(yaml, resource);
+```
+
 ## Features
   - Uses SnakeYAML for reading YAML, so it can handle any data recognizable by SnakeYAML.
   - Ease of access using dotted notation to read properties
